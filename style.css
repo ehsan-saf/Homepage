@@ -108,7 +108,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 40px;
+  padding: 3em;
 }
 
 .project-group {
@@ -116,23 +116,6 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
   justify-content: space-around;
-}
-
-@media (max-width: 1300px) {
-  .project-group {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  main {
-    align-items: center;
-  }
-
-  .project-group {
-    justify-content: center;
-    grid-template-columns: minmax(150px, 1fr);
-  }
 }
 
 .project {
@@ -171,4 +154,27 @@ main {
 .project-below > div:first-child {
   display: flex;
   justify-content: space-between;
+}
+
+/* Media Query */
+
+/* Tablet responsive */
+
+@media (max-width: 1300px) {
+  .project-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+  main {
+    align-items: center;
+  }
+
+  .project-group {
+    justify-content: center;
+    grid-template-columns: minmax(150px, 1fr);
+  }
 }
