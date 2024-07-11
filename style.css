@@ -1,17 +1,80 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body > * {
+  border: 1px solid red;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+
+  padding: 2.5rem;
+}
+
+.header-container .me-image {
+  width: 220px;
+  height: auto;
+
+  z-index: 1;
+
+  transform: translateX(20px);
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  padding: 0.5em 0.5em 0.5em 2em;
+
+  border-radius: 5px;
+
+  max-width: 35%;
+
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.about .icon-group {
+  align-self: flex-end;
+  font-size: 1.8rem;
+}
+
+.logo-button {
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+}
