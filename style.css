@@ -261,6 +261,10 @@ main {
     padding: 0;
   }
 
+  .contact-info {
+    padding: 5%;
+  }
+
   .contact-image {
     max-width: 100%;
   }
