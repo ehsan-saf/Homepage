@@ -263,7 +263,6 @@ main {
   }
 
   .contact-image {
-    width: auto;
-    height: 450px;
+    max-width: 100%;
   }
 }
