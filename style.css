@@ -262,7 +262,16 @@ main {
   }
 
   .contact-info {
-    padding: 5%;
+    padding: 7%;
+  }
+
+  .contact-icon {
+    display: none;
+  }
+
+  .footer-container .icon-group {
+    justify-content: center;
+    font-size: 3rem;
   }
 
   .contact-image {
