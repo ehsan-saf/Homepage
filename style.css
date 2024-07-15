@@ -241,6 +241,10 @@ main {
     font-size: 12px;
   }
 
+  body > * {
+    padding: 0;
+  }
+
   main {
     align-items: center;
     padding: 1em 1em;
